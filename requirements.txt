@@ -1,0 +1,14 @@
+# Web framework + server that runs it
+fastapi
+uvicorn[standard]
+
+# WebSocket client: fake Exotel client + the Deepgram connection (Step 1C).
+# Version 14+ needed: our code uses its "additional_headers" option.
+websockets>=14
+
+# Reads secrets/settings from the .env file (Step 1C)
+python-dotenv
+
+# Testing
+pytest
+httpx   # needed by FastAPI's TestClient

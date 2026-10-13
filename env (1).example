@@ -1,0 +1,18 @@
+# Copy this file to ".env" and fill in real values.
+# NEVER commit ".env" or paste real keys in chat.
+
+# Step 1B: debug audio (saves each call as a .wav in DEBUG_AUDIO_DIR).
+# Contains customer voice: set SAVE_DEBUG_AUDIO=0 when testing is done.
+SAVE_DEBUG_AUDIO=1
+DEBUG_AUDIO_DIR=debug_audio
+
+# Step 1C: Deepgram STT. Get a key at https://console.deepgram.com
+DEEPGRAM_API_KEY=
+# Optional (these are the defaults): nova-3 multilingual = Hindi + English
+DEEPGRAM_MODEL=nova-3
+DEEPGRAM_LANGUAGE=multi
+
+# Step 1D (Exotel)
+EXOTEL_ACCOUNT_SID=
+EXOTEL_API_KEY=
+EXOTEL_API_TOKEN=
